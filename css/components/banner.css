@@ -1,0 +1,64 @@
+
+.banner {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #B9E2F7;
+}
+
+.banner-image {
+  height: 400px;
+  background-image: url("../../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.banner-image h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px #555555;
+  margin: 0;
+}
+
+.banner-content {
+  text-align: center;
+  padding: 45px 80px 60px;
+}
+
+.banner-content p {
+  color: white;
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0 auto 25px;
+  max-width: 650px;
+}
+
+.banner-content .btn-pink {
+  min-width: 230px;
+}
+
+/* celular */
+@media (max-width: 600px) {
+  .banner-image {
+    height: 260px;
+  }
+
+  .banner-image h1 {
+    font-size: 30px;
+  }
+
+  .banner-content {
+    padding: 30px 20px 40px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+}

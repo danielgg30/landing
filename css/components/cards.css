@@ -1,0 +1,88 @@
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px 40px;
+  background-color: #B9E2F7;
+  border-radius: 10px;
+}
+
+.container h2 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0 45px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.card {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.card-image h3 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #333333;
+}
+
+.card .btn-pink {
+  margin-top: 18px;
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+.card p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+/* celular */
+@media (max-width: 700px) {
+  .container {
+    padding: 35px 20px;
+  }
+
+  .container h2 {
+    font-size: 27px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 25px;
+  }
+}
